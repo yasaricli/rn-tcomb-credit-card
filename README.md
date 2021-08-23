@@ -2,6 +2,9 @@
 
 Credit card form with tcomb for React native
 
+<p align="center">
+    <img src="kapture.gif" width="350" />
+</p>
 
 ## Install
 
