@@ -75,6 +75,14 @@ class App extends Component {
       noValidHolderName: 'Lütfen geçerli bir isim yazınız'
   },
   
+  helpers: {
+      cardHolderNameHelper: "Kart üzerinde yazıldığı gibi",
+      cardNumberHelper: "",
+      expireMonthHelper: "",
+      expireYearHelper: "",
+      cvcHelper: "Kartın arkasındaki son 3 rakam",
+  },
+  
   // handlers
   onChange(value) => {}, //  the event handler to be called when the value changes
 }
