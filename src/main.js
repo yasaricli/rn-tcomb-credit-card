@@ -31,7 +31,7 @@ const ERRORS = {
 };
 
 const HELPERS = {
-  cardHolderNameHelper: "'Kart üzerinde yazıldığı gibi'",
+  cardHolderNameHelper: "Kart üzerinde yazıldığı gibi",
   cardNumberHelper: "",
   expireMonthHelper: "",
   expireYearHelper: "",

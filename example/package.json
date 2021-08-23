@@ -15,7 +15,7 @@
     "moment": "^2.29.1",
     "react": "17.0.2",
     "react-native": "0.65.1",
-    "rn-tcomb-credit-card": "^0.0.1",
+    "rn-tcomb-credit-card": "^0.0.2",
     "tcomb-form-native": "^0.6.20",
     "yarn": "^1.22.11"
   },

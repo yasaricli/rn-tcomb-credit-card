@@ -5466,10 +5466,10 @@ rimraf@~2.2.6:
   resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.2.8.tgz#e439be2aaee327321952730f99a8929e4fc50582"
   integrity sha1-5Dm+Kq7jJzIZUnMPmaiSnk/FBYI=
 
-rn-tcomb-credit-card@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/rn-tcomb-credit-card/-/rn-tcomb-credit-card-0.0.1.tgz#c49cc4e6b5b3b6bacfa62354f6bd3582ded24c4c"
-  integrity sha512-btgsBRCcfDlXM0sUwbV+H/WFDXabUwdmsHC3rUkLueOou/8C2r/+oEDuLFLCM3gtxz/J7uwlXgiJ+jpZO+2dJw==
+rn-tcomb-credit-card@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/rn-tcomb-credit-card/-/rn-tcomb-credit-card-0.0.2.tgz#6db9a5ce9958ef87d5b315c3437bdee9f6386f6b"
+  integrity sha512-EfwdVWmvhfhFY2s6Dws/1xwR/6BVLrIgM43KN2jTArjSrOlkRtRxX8zThvAbmrXDEDFsBd9fa5e2Vp/MWjkF1Q==
   dependencies:
     card-validator "^8.1.1"
     moment "^2.29.1"
