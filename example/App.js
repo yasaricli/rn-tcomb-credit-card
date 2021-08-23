@@ -10,19 +10,12 @@ export default class App extends Component {
         <CreditCardForm ref="form" />
 
         <TouchableOpacity
-          style={{
-            backgroundColor: 'red',
-            marginHorizontal: 20,
-            alignItems: 'center',
-            height: 50,
-            justifyContent: 'center',
-          }}
           onPress={() =>
             this.refs.form.submit(value => {
               console.log(value);
             })
           }>
-          <Text style={{color: 'white', fontSize: 20}}>Gönder</Text>
+          <Text>Gönder</Text>
         </TouchableOpacity>
       </SafeAreaView>
     );

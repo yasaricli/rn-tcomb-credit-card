@@ -51,10 +51,9 @@ export default class CreditCardForm extends Component {
   onChange(value) {
     const {onChange} = this.props;
 
-    console.log(value);
-
     // change value
     this.setState({value}, () => {
+      
       // onchange pass data callback
       onChange && onChange(value);
     });
