@@ -1,0 +1,20 @@
+{
+  "name": "rn-tcomb-credit-card",
+  "version": "0.0.1",
+  "description": "Credit card form with tcomb for React native",
+  "main": "./src/main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yasaricli/rn-tcomb-credit-card.git"
+  },
+  "author": "Yaşar İçli <yasaricli@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yasaricli/rn-tcomb-credit-card/issues"
+  },
+  "homepage": "https://github.com/yasaricli/rn-tcomb-credit-card#readme",
+  "dependencies": {
+    "card-validator": "^8.1.1",
+    "moment": "^2.29.1"
+  }
+}
