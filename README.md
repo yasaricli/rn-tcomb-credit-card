@@ -102,3 +102,14 @@ this.refs.submit((value) => {
 });
 
 ```
+
+Here are the images that are currently customized in a project:
+
+Normal Form:
+
+<img src="custom_1.png" width="250" />
+
+
+Error Form:
+
+<img src="custom_2.png" width="250" />
