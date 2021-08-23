@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {SafeAreaView, Text, TouchableOpacity} from 'react-native';
 
-import CreditCardForm from './src/main';
+import CreditCardForm from 'rn-tcomb-credit-card';
 
 export default class App extends Component {
   render() {
