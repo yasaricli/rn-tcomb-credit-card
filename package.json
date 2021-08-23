@@ -1,6 +1,6 @@
 {
   "name": "rn-tcomb-credit-card",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Credit card form with tcomb for React native",
   "main": "./src/main.js",
   "repository": {

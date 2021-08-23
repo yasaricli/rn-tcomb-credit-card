@@ -1,33 +1,41 @@
-import React, {Component} from 'react';
-import {View} from 'react-native';
-import t from 'tcomb-form-native';
+import React, { Component } from "react";
+import { View } from "react-native";
+import t from "tcomb-form-native";
 
 // defines
-import Options from './defines/options';
-import Struct from './defines/struct';
+import Options from "./defines/options";
+import Struct from "./defines/struct";
 
 // styles
-import Styles from './styles/sheet';
+import Styles from "./styles/sheet";
 
 const Form = t.form.Form;
 
 const LABELS = {
-  cardHolderName: 'Kart Üzerindeki İsim',
-  cardNumber: 'Kart Numarası',
-  expireMonth: 'Ay',
-  expireYear: 'Yıl',
-  cvc: 'Güvenlik (CVC) Kodu',
+  cardHolderName: "Kart Üzerindeki İsim",
+  cardNumber: "Kart Numarası",
+  expireMonth: "Ay",
+  expireYear: "Yıl",
+  cvc: "Güvenlik (CVC) Kodu",
 };
 
 const ERRORS = {
-  cardHolderNameRequired: 'Adınızı girin.',
-  cardNumberRequired: 'Lütfen kredi kartı numaranızı giriniz',
-  expireMonthRequired: 'Ay seçin',
-  expireYearRequired: 'Yıl seçin',
-  cvcRequired: 'Güvenlik kodunu girin.',
-  noValidCardNumber: 'Lütfen geçerli bir kart numarası giriniz',
-  noValidCvc: 'CVC kodu hatalı',
-  noValidHolderName: 'Lütfen geçerli bir isim yazınız'
+  cardHolderNameRequired: "Adınızı girin.",
+  cardNumberRequired: "Lütfen kredi kartı numaranızı giriniz",
+  expireMonthRequired: "Ay seçin",
+  expireYearRequired: "Yıl seçin",
+  cvcRequired: "Güvenlik kodunu girin.",
+  noValidCardNumber: "Lütfen geçerli bir kart numarası giriniz",
+  noValidCvc: "CVC kodu hatalı",
+  noValidHolderName: "Lütfen geçerli bir isim yazınız",
+};
+
+const HELPERS = {
+  cardHolderNameHelper: "'Kart üzerinde yazıldığı gibi'",
+  cardNumberHelper: "",
+  expireMonthHelper: "",
+  expireYearHelper: "",
+  cvcHelper: "Kartın arkasındaki son 3 rakam",
 };
 
 export default class CreditCardForm extends Component {
@@ -39,7 +47,7 @@ export default class CreditCardForm extends Component {
   }
 
   componentDidMount() {
-    const {initialValue} = this.props;
+    const { initialValue } = this.props;
 
     if (initialValue) {
       this.setState({
@@ -49,11 +57,10 @@ export default class CreditCardForm extends Component {
   }
 
   onChange(value) {
-    const {onChange} = this.props;
+    const { onChange } = this.props;
 
     // change value
-    this.setState({value}, () => {
-      
+    this.setState({ value }, () => {
       // onchange pass data callback
       onChange && onChange(value);
     });
@@ -66,9 +73,15 @@ export default class CreditCardForm extends Component {
   }
 
   render() {
-    const {stylesheet, areaViewStyle = {}, labels = {}, errors = {}} = this.props;
+    const {
+      stylesheet,
+      areaViewStyle = {},
+      labels = {},
+      errors = {},
+      helpers = {},
+    } = this.props;
+    
     const arg = {
-
       // default styles
       stylesheet,
 
@@ -80,6 +93,11 @@ export default class CreditCardForm extends Component {
       errors: {
         ...ERRORS,
         ...errors,
+      },
+
+      helpers: {
+        ...HELPERS,
+        ...helpers,
       },
     };
 

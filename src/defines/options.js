@@ -5,7 +5,7 @@ import {View, Text} from 'react-native';
 import Styles from '../styles/sheet';
 import Boost from '../styles/boost';
 
-export default ({stylesheet, labels, errors}) => {
+export default ({stylesheet, labels, errors, helpers }) => {
   return {
     stylesheet,
     
@@ -42,29 +42,32 @@ export default ({stylesheet, labels, errors}) => {
       cardHolderName: {
         label: labels.cardHolderName,
         autoFocus: true,
-        help: 'Kart üzerinde yazdığı gibi'
+        help: helpers.cardHolderNameHelper
       },
 
       cardNumber: {
         label: labels.cardNumber,
         placeholder: '---- ---- ---- ----',
+        help: helpers.cardNumberhelper
       },
 
       expireMonth: {
         label: labels.expireMonth,
         error: errors.expireMonthRequired,
-        order: 'asc'
+        order: 'asc',
+        help: helpers.expireMonthHelper
       },
 
       expireYear: {
         label: labels.expireYear,
         error: errors.expireYearRequired,
-        order: 'asc'
+        order: 'asc',
+        help: helpers.expireYearHelper
       },
 
       cvc: {
         label: labels.cvc,
-        help: 'Kartın arkasındaki son 3 rakam'
+        help: helpers.cvcHelper
       },
     },
   };
