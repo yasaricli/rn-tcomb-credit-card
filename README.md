@@ -97,7 +97,7 @@ If you want to post the form and get errors or results, you will need to run the
 <CreditCardForm ref="form" />
 
 // call submit() to get the values of the form
-this.refs.submit((value) => {
+this.refs.form.submit((value) => {
     // values form
 });
 
